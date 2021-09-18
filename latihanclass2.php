@@ -64,7 +64,6 @@ class Matematika
 
 $data = new Matematika();
 
-if ($_POST) {
    if ($_POST['perhitungan'] == "tambah") {
         echo "Hasil ".$angka1." + ".$angka2." = ".$data->Tambah($angka1, $angka2);
       } elseif ($_POST['perhitungan'] == "kali") {
@@ -74,5 +73,5 @@ if ($_POST) {
       } elseif ($_POST['perhitungan'] == "bagi") {
         echo "Hasil ".$angka1." / ".$angka2." = ".$data->Bagi($angka1, $angka2);
       }
-   }
+  
 ?>
